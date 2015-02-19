@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class BeaconSimulator;
+
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) BeaconSimulator *simulator;
 
 @end
 
