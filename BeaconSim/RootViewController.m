@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ViewController.m
 //  BeaconSim
 //
 //  Created by mbcharbonneau on 2/18/15.
@@ -27,13 +27,37 @@
 //  THE SOFTWARE.
 //
 
-#import <UIKit/UIKit.h>
+#import "RootViewController.h"
+#import "BeaconSimulator.h"
 
-@class BeaconSimulator;
+@interface RootViewController ()
 
-@interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *UUIDLabel;
+@property (strong, nonatomic) IBOutlet UISwitch *toggleSwitch;
 
-@property (strong, nonatomic) BeaconSimulator *simulator;
+- (IBAction)toggleBeacon:(id)sender;
 
 @end
 
+@implementation RootViewController
+
+- (IBAction)toggleBeacon:(id)sender;
+{
+    if ( self.toggleSwitch.on ) {
+        [self.simulator start:self];
+    } else {
+        [self.simulator stop:self];
+    }
+}
+
+- (void)viewDidLoad;
+{
+    NSAssert( self.simulator != nil, @"simulator should be set" );
+
+    [super viewDidLoad];
+
+    self.UUIDLabel.text = self.simulator.UUID.UUIDString;
+    self.toggleSwitch.on = YES;
+}
+
+@end
