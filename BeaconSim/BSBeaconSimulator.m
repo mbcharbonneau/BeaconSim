@@ -1,5 +1,5 @@
 //
-//  BeaconSimulator.m
+//  BSBeaconSimulator.m
 //  BeaconSim
 //
 //  Created by mbcharbonneau on 2/18/15.
@@ -27,9 +27,9 @@
 //  THE SOFTWARE.
 //
 
-#import "BeaconSimulator.h"
+#import "BSBeaconSimulator.h"
 
-@interface BeaconSimulator() <CBPeripheralManagerDelegate>
+@interface BSBeaconSimulator() <CBPeripheralManagerDelegate>
 
 @property (strong, nonatomic) CBPeripheralManager *peripheralManager;
 @property (assign, nonatomic) BOOL shouldBroadcast;
@@ -38,7 +38,7 @@
 
 @end
 
-@implementation BeaconSimulator
+@implementation BSBeaconSimulator
 
 #pragma mark BeaconSimulator
 

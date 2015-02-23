@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BSRootViewController.h
 //  BeaconSim
 //
 //  Created by mbcharbonneau on 2/18/15.
@@ -29,11 +29,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class BeaconSimulator;
+@class BSBeaconSimulator;
 
-@interface RootViewController : UIViewController
+@interface BSRootViewController : UIViewController
 
-@property (strong, nonatomic) BeaconSimulator *simulator;
+@property (strong, nonatomic) BSBeaconSimulator *simulator;
 
 @end
 

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.m
+//  BSAppDelegate.m
 //  BeaconSim
 //
 //  Created by mbcharbonneau on 2/18/15.
@@ -27,20 +27,20 @@
 //  THE SOFTWARE.
 //
 
-#import "AppDelegate.h"
-#import "BeaconSimulator.h"
-#import "RootViewController.h"
+#import "BSAppDelegate.h"
+#import "BSBeaconSimulator.h"
+#import "BSRootViewController.h"
 
 static NSString *const BSUUIDKey = @"BSUUIDKey";
 
-@interface AppDelegate () <CLLocationManagerDelegate>
+@interface BSAppDelegate () <CLLocationManagerDelegate>
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
-@property (strong, nonatomic) BeaconSimulator *beaconSimulator;
+@property (strong, nonatomic) BSBeaconSimulator *beaconSimulator;
 
 @end
 
-@implementation AppDelegate
+@implementation BSAppDelegate
 
 #pragma mark NSApplicationDelegate
 
@@ -57,7 +57,7 @@ static NSString *const BSUUIDKey = @"BSUUIDKey";
         UUID = [[NSUUID alloc] initWithUUIDString:UUIDString];
     }
 
-    self.beaconSimulator = [[BeaconSimulator alloc] initWithUUID:UUID];
+    self.beaconSimulator = [[BSBeaconSimulator alloc] initWithUUID:UUID];
 
     if ( [CLLocationManager authorizationStatus] != kCLAuthorizationStatusAuthorizedWhenInUse ) {
         self.locationManager = [[CLLocationManager alloc] init];
@@ -67,7 +67,7 @@ static NSString *const BSUUIDKey = @"BSUUIDKey";
         [self.beaconSimulator start:self];
     }
 
-    RootViewController *controller = (RootViewController *)self.window.rootViewController;
+    BSRootViewController *controller = (BSRootViewController *)self.window.rootViewController;
     controller.simulator = self.beaconSimulator;
 
     return YES;

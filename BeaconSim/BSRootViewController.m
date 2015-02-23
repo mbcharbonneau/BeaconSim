@@ -1,5 +1,5 @@
 //
-//  BeaconSimulator.h
+//  BSRootViewController.m
 //  BeaconSim
 //
 //  Created by mbcharbonneau on 2/18/15.
@@ -27,17 +27,41 @@
 //  THE SOFTWARE.
 //
 
-@import Foundation;
-@import CoreLocation;
-@import CoreBluetooth;
+#import "BSRootViewController.h"
+#import "BSBeaconSimulator.h"
 
-@interface BeaconSimulator : NSObject
+@interface BSRootViewController ()
 
-@property (readonly) NSUUID *UUID;
+@property (weak, nonatomic) IBOutlet UILabel *UUIDLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *toggleSwitch;
 
-- (instancetype)initWithUUID:(NSUUID *)UUID;
+- (IBAction)toggleBeacon:(id)sender;
 
-- (IBAction)start:(id)sender;
-- (IBAction)stop:(id)sender;
+@end
+
+@implementation BSRootViewController
+
+#pragma mark BSRootViewController Private
+
+- (IBAction)toggleBeacon:(id)sender;
+{
+    if ( self.toggleSwitch.on ) {
+        [self.simulator start:self];
+    } else {
+        [self.simulator stop:self];
+    }
+}
+
+#pragma mark UIViewController
+
+- (void)viewDidLoad;
+{
+    NSAssert( self.simulator != nil, @"simulator should be set" );
+
+    [super viewDidLoad];
+
+    self.UUIDLabel.text = self.simulator.UUID.UUIDString;
+    self.toggleSwitch.on = YES;
+}
 
 @end

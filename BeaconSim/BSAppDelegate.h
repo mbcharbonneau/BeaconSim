@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  BSAppDelegate.h
 //  BeaconSim
 //
 //  Created by mbcharbonneau on 2/18/15.
@@ -30,7 +30,7 @@
 @import UIKit;
 @import CoreLocation;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface BSAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

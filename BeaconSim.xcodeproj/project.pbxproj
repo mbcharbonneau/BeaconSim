@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		480F7B941A950C9800FBE0D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 480F7B931A950C9800FBE0D7 /* main.m */; };
-		480F7B971A950C9800FBE0D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 480F7B961A950C9800FBE0D7 /* AppDelegate.m */; };
-		480F7B9A1A950C9800FBE0D7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480F7B991A950C9800FBE0D7 /* RootViewController.m */; };
+		480F7B971A950C9800FBE0D7 /* BSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 480F7B961A950C9800FBE0D7 /* BSAppDelegate.m */; };
+		480F7B9A1A950C9800FBE0D7 /* BSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480F7B991A950C9800FBE0D7 /* BSRootViewController.m */; };
 		480F7B9D1A950C9800FBE0D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480F7B9B1A950C9800FBE0D7 /* Main.storyboard */; };
 		480F7B9F1A950C9800FBE0D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 480F7B9E1A950C9800FBE0D7 /* Images.xcassets */; };
 		480F7BA21A950C9800FBE0D7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480F7BA01A950C9800FBE0D7 /* LaunchScreen.xib */; };
 		480F7BAE1A950C9800FBE0D7 /* BeaconSimTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 480F7BAD1A950C9800FBE0D7 /* BeaconSimTests.m */; };
-		480F7BB91A950F0D00FBE0D7 /* BeaconSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 480F7BB81A950F0D00FBE0D7 /* BeaconSimulator.m */; };
+		480F7BB91A950F0D00FBE0D7 /* BSBeaconSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 480F7BB81A950F0D00FBE0D7 /* BSBeaconSimulator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,18 +31,18 @@
 		480F7B8E1A950C9800FBE0D7 /* BeaconSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		480F7B921A950C9800FBE0D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		480F7B931A950C9800FBE0D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		480F7B951A950C9800FBE0D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		480F7B961A950C9800FBE0D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		480F7B981A950C9800FBE0D7 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		480F7B991A950C9800FBE0D7 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		480F7B951A950C9800FBE0D7 /* BSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSAppDelegate.h; sourceTree = "<group>"; };
+		480F7B961A950C9800FBE0D7 /* BSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSAppDelegate.m; sourceTree = "<group>"; };
+		480F7B981A950C9800FBE0D7 /* BSRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSRootViewController.h; sourceTree = "<group>"; };
+		480F7B991A950C9800FBE0D7 /* BSRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSRootViewController.m; sourceTree = "<group>"; };
 		480F7B9C1A950C9800FBE0D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		480F7B9E1A950C9800FBE0D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		480F7BA11A950C9800FBE0D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		480F7BA71A950C9800FBE0D7 /* BeaconSimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconSimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		480F7BAC1A950C9800FBE0D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		480F7BAD1A950C9800FBE0D7 /* BeaconSimTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconSimTests.m; sourceTree = "<group>"; };
-		480F7BB71A950F0D00FBE0D7 /* BeaconSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconSimulator.h; sourceTree = "<group>"; };
-		480F7BB81A950F0D00FBE0D7 /* BeaconSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconSimulator.m; sourceTree = "<group>"; };
+		480F7BB71A950F0D00FBE0D7 /* BSBeaconSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBeaconSimulator.h; sourceTree = "<group>"; };
+		480F7BB81A950F0D00FBE0D7 /* BSBeaconSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBeaconSimulator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +84,12 @@
 		480F7B901A950C9800FBE0D7 /* BeaconSim */ = {
 			isa = PBXGroup;
 			children = (
-				480F7B951A950C9800FBE0D7 /* AppDelegate.h */,
-				480F7B961A950C9800FBE0D7 /* AppDelegate.m */,
-				480F7BB71A950F0D00FBE0D7 /* BeaconSimulator.h */,
-				480F7BB81A950F0D00FBE0D7 /* BeaconSimulator.m */,
-				480F7B981A950C9800FBE0D7 /* RootViewController.h */,
-				480F7B991A950C9800FBE0D7 /* RootViewController.m */,
+				480F7B951A950C9800FBE0D7 /* BSAppDelegate.h */,
+				480F7B961A950C9800FBE0D7 /* BSAppDelegate.m */,
+				480F7BB71A950F0D00FBE0D7 /* BSBeaconSimulator.h */,
+				480F7BB81A950F0D00FBE0D7 /* BSBeaconSimulator.m */,
+				480F7B981A950C9800FBE0D7 /* BSRootViewController.h */,
+				480F7B991A950C9800FBE0D7 /* BSRootViewController.m */,
 				480F7B9B1A950C9800FBE0D7 /* Main.storyboard */,
 				480F7B9E1A950C9800FBE0D7 /* Images.xcassets */,
 				480F7BA01A950C9800FBE0D7 /* LaunchScreen.xib */,
@@ -224,9 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				480F7BB91A950F0D00FBE0D7 /* BeaconSimulator.m in Sources */,
-				480F7B9A1A950C9800FBE0D7 /* RootViewController.m in Sources */,
-				480F7B971A950C9800FBE0D7 /* AppDelegate.m in Sources */,
+				480F7BB91A950F0D00FBE0D7 /* BSBeaconSimulator.m in Sources */,
+				480F7B9A1A950C9800FBE0D7 /* BSRootViewController.m in Sources */,
+				480F7B971A950C9800FBE0D7 /* BSAppDelegate.m in Sources */,
 				480F7B941A950C9800FBE0D7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
